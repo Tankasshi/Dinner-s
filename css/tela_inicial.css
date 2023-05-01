@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(49, 42, 42);
+    margin-top: 74px;
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-position: inherit;
+}
+
+header {
+    background-color: rgb(49, 42, 42);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 12%;
+    transition: all .50s ease;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.logo-nav-bar {
+    display: flex;
+    align-items: center;
+    animation: slideRight 1s ease forwards;
+}
+
+.logo-nav-bar #logo1 {
+    width: 50px;
+    height: 50px;
+}
+.logo-nav-bar #logo2 {
+    width: 110px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.nav-bar {
+    padding: 8px;
+    display: flex;
+}
+
+.nav-bar a {
+    color: rgb(255, 233, 200);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0 30px;
+    transition: all .50s ease;
+}
+
+.nav-bar a:hover {
+    color: #A72828;
+}
+
+.nav-bar a.active {
+    color: #A72828;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: rgb(255, 233, 200);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+
+
+.content{
+    padding: 10px 10%;
+    display: flex;
+}
+
+
+
+#inicio{
+    padding-bottom: 0;
+    padding-right: 3%;
+    background: #A72828;
+background: linear-gradient(75deg, #A72828 49%, rgba(122,93,50,0) 49%);
+    width: 100%;
+    height: 92vh;
+}
+
+
+
+.content-left{
+    padding-top: 4%;
+    width: 50%;
+    height: 92vh;
+}
+.content-left img{
+    margin-top: 100px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.content-left p{
+    color: rgb(255, 233, 200);
+    font-weight: 500;
+    font-size: 20px;
+}
+.content-left button{
+    border: none;
+    color: rgb(255, 233, 200);
+    background-color: rgb(49, 42, 42);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.content-left button:hover{
+    background-color: rgb(255, 233, 200);
+    color: rgb(49, 42, 42);
+    font-weight: 600;
+    transition: 0.7s ease;
+}
+
+.content-right{
+    padding-top: 10px;
+    display: flex;
+    width: 50%;
+    margin-left: 250px;
+}
+.content-right img{
+    width: 100%;  
+}
+
+#quem-somos{
+    background-image: url(../img/Background\ 1.png);
+    background-repeat: no-repeat;
+    
+    height: 1100px;
+}
+
+.texto{
+    padding-top: 300px;
+    width: 40%;
+    flex-direction: column;
+}
+.texto h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: rgb(255, 233, 200);
+}
+.texto p{
+    color: rgb(255, 233, 200);  
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.imagem{
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+#frase{
+    background-color: rgb(49, 42, 42);
+    padding: 70px;
+    justify-content: center;
+    align-items: center;
+}
+#frase p{
+    color: rgb(255, 233, 200);
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#empresas{
+    background-image: url(../img/Background\ 2.png);
+    background-repeat: no-repeat;
+    height: 1100px;
+}
+#empresas .texto{
+    width: 43%;
+}
+#empresas .texto ul{
+    padding-left: 40px;
+}
+#empresas .texto li{
+    color: rgb(255, 233, 200); 
+    font-size: 20px;
+    list-style: circle;
+}
+#empresas .imagem{
+    margin-top: 25%;
+    margin-left: 10%;
+}
+
+#empresas .imagem img{
+    width: 100%;
+}
+
+#empresas button{
+   margin-top: 40px; 
+   border: none;
+   color: rgb(255, 233, 200);
+   background-color: rgb(49, 42, 42);
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+   padding: 15px;
+   padding-left: 100px;
+   padding-right: 100px;
+   font-weight: 600;
+}
+#empresas button:hover{
+   background-color: rgb(255, 233, 200);
+   color: rgb(49, 42, 42);
+   font-weight: 600;
+   transition: 0.7s ease;
+}
+
+
+.carrosel{
+    background-image: url(../img/Background\ 1.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 1000px;
+    height: 600px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 1000px;
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid rgb(255, 233, 200);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #A72828;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid rgb(25, 134, 236);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 1000px;
+    margin-top: 560px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #A72828;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #A72828;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #A72828;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #A72828;
+}
+
+
+#copyright{ 
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #A72828;
+    font-weight: 300;
+    color: rgb(255, 233, 200);
+}
+
+#contato{
+    margin: 20px;
+    color: rgb(255, 233, 200);
+    justify-content: space-between;
+}
+#contato i{
+    color: rgb(255, 233, 200);
+    font-size: 50px;
+}
+#contato i:hover{
+    color: #A72828;
+    }
+#contato a{
+    align-items: flex-end;
+}
+
+
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .nav-bar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 15.3rem;
+        background: #4f5053;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: all .50s ease;
+    }
+
+    .nav-bar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .nav-bar a:hover {
+        color: #A72828;
+        transform: translateY(2px);
+    }
+
+    .nav-bar a.active {
+        color: #A72828;
+    }
+
+    .nav-bar.open {
+        right: 0%;
+    } 
+}

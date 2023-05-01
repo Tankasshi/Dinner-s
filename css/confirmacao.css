@@ -1,0 +1,34 @@
+.container{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.dados{
+    background-color: rgb(49, 42, 42);
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 500px;
+}
+
+.btn{
+    text-align: center;
+}
+
+.img img{
+    width: 80px;
+}
+
+.mensagem{
+    text-align: center;
+}
+
+.mensagem h1, p{
+    color: rgb(255, 233, 200);
+    margin-bottom: 4px;
+}
